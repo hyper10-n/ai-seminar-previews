@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja" data-doc="advanced">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Uravation応用編 — AI業務活用セミナー</title>
+<meta name="description" content="応用編：全機能の習得ではなく、AI業務自動化の「地図」を渡す3時間。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260701-header-sync" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">AI</div>
+      <div class="brand-text">
+        <b>AI業務活用セミナー</b>
+        <span>講座コンテンツ・レポート</span>
+      </div>
+    </a>
+    <nav class="pagenav">
+      <a href="index.html">概要</a>
+      <a href="01.html">Uravation基礎編</a>
+      <a href="02.html" class="current">Uravation応用編</a>
+      <a href="original.html">NightEffect案</a>
+    </nav>
+  </div>
+</header>
+
+<div class="rail-wrap" style="padding-top: 30px;">
+  <div class="rail">
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">STAGE 0</span>
+      <span class="rail-headline">ブラウザでAIに聞く</span>
+      <span class="rail-sub">いまの現在地</span>
+    </div>
+    <a class="rail-node is-doc is-link" data-accent="basic" href="01.html">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation基礎編</span>
+      <span class="rail-headline">PC上でAIに任せる</span>
+      <span class="rail-sub">成果物を作る</span>
+    </a>
+    <div class="rail-node is-doc is-active">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation応用編</span>
+      <span class="rail-headline">頼み方を仕組みにする</span>
+      <span class="rail-sub">再利用・連携・自動化</span>
+    </div>
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">FUTURE</span>
+      <span class="rail-headline">AIが常駐して動く</span>
+      <span class="rail-sub">業務システム化</span>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="目次">
+    <div class="toc-title">On this page</div>
+    <ul class="toc-list" id="tocList"></ul>
+  </nav>
+
+  <main>
+    <div class="doc-flag">
+      <span class="doc-num">02</span>
+      <span class="doc-flag-text">
+        <b>応用編</b>
+        <span>全機能の習得ではなく、AI業務自動化の「地図」を渡す3時間</span>
+      </span>
+    </div>
+
+    <div class="tl-toggle">
+      <a href="02.html" class="current">分析レポート</a>
+      <a href="timeline-02.html">タイムライン</a>
+    </div>
+
+    <div class="definition">
+      <span class="eyebrow">この講座の一文定義</span>
+      <p>単発の業務依頼ができる受講者に、再利用・外部連携・定期実行・並列処理・常駐化の方法を見せ、<strong>AI活用を「作業」から「仕組み」へ進める</strong>ための3時間講座。</p>
+    </div>
+
+    <section class="section" id="selling" data-toc="何を売っていた講座か">
+      <div class="sec-head"><span class="sec-kicker">01 — What it sold</span><h2 class="sec-title">何を売っていた講座か</h2></div>
+      <div class="prose">
+        <p>売っていたのは便利な新機能の紹介ではなく、<strong>AIを一回限りの作業者から、継続的に動く業務システムへ変える未来</strong>でした。基礎編が「AIに仕事を頼む」なら、応用編は「その頼み方を仕組みにする」。指示を保存し、外部とつなぎ、定期実行し、複数のAIに役割分担させ、PCを閉じても動く世界観まで示します。</p>
+        <p>内容だけ見ると、3時間で深く習得するには多すぎ、各テーマの実装深度は浅い。<strong>しかし価値は全機能の習得ではなく、「次はどんな方向に伸ばせるか」を見せること</strong>にあります。技術習得講座というより「AI業務自動化の地図を渡す講座」です。</p>
+      </div>
+      <div class="value-grid">
+        <div class="value-card"><span class="vnum">1</span><p>毎回の指示を保存して再利用可能にする</p></div>
+        <div class="value-card"><span class="vnum">2</span><p>外部サービスや既存ツールにつなぐ</p></div>
+        <div class="value-card"><span class="vnum">3</span><p>定期実行や並列実行、役割分担で業務を回す</p></div>
+        <div class="value-card"><span class="vnum">4</span><p>常駐型AIで、業務が自動で進む未来像を持つ</p></div>
+      </div>
+      <div class="callout">
+        <span class="tag">持ち帰るべきもの</span>
+        <p>「全部を実装できる自分」ではなく、<strong>「まず再利用から始め、外部連携は次、常駐化は将来の投資テーマ」という優先順位</strong>。これが応用編の本当の成果物です。</p>
+      </div>
+    </section>
+
+    <section class="section" id="persona" data-toc="想定ペルソナ">
+      <div class="sec-head"><span class="sec-kicker">02 — Persona</span><h2 class="sec-title">想定ペルソナ</h2></div>
+      <div class="persona-grid">
+        <div class="persona">
+          <div class="persona-role">中心ペルソナ</div>
+          <h4>AIに業務を頼む感覚を掴み始めた人</h4>
+          <p>基礎編または同等の体験を経た非エンジニア寄り。関心は高く、単なるプロンプト集では物足りない。まだ自力で設計はできないが、次の不満を持ち始めています。</p>
+          <ul class="feel-list">
+            <li>毎回同じ指示を書くのが面倒</li>
+            <li>日報・投稿・レポート・チェックを定期的にやってほしい</li>
+            <li>Notion・Drive・Slack などとつなげたい</li>
+            <li>自分だけでなくチームや会社の業務に広げたい</li>
+            <li>でも、どこから手をつけるべきか分からない</li>
+          </ul>
+          <p style="margin-top:12px;">この人に応用編は、実装力ではなく<strong>選択肢の見取り図</strong>を売っています。</p>
+        </div>
+        <div class="persona is-sub">
+          <div class="persona-role">サブペルソナ</div>
+          <h4>前のめりな経営者・管理職・講師・コンサル・改善担当</h4>
+          <p>「自分で全部実装」より「何が可能かを知り、外注・社内展開・導入支援の判断材料にする」ために来ている。細部より、AI業務自動化の発展段階を掴めることが価値です。</p>
+          <p>満足度は「完全実装できたか」より、<strong>「今後の投資判断や相談内容が明確になったか」</strong>で決まります。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ba" data-toc="受講者の Before / After">
+      <div class="sec-head"><span class="sec-kicker">03 — Before / After</span><h2 class="sec-title">受講者の Before / After</h2></div>
+      <div class="table-wrap">
+        <table class="ba">
+          <thead><tr><th>観点</th><th class="col-before">Before</th><th class="col-after">After</th></tr></thead>
+          <tbody>
+            <tr><td class="t-key">AIの使い方</td><td class="before">必要な時に手動で依頼する</td><td class="after">定型業務を保存して再利用する</td></tr>
+            <tr><td class="t-key">指示</td><td class="before">毎回似た説明を入力する</td><td class="after">手順・ルール・出力形式を残す</td></tr>
+            <tr><td class="t-key">連携</td><td class="before">PC内ファイル中心</td><td class="after">外部サービスへ広げる</td></tr>
+            <tr><td class="t-key">実行</td><td class="before">単発・逐次・手動</td><td class="after">定期・並列・役割分担・半自動</td></tr>
+            <tr><td class="t-key">未来像</td><td class="before">AIで個別業務を効率化する</td><td class="after">AIが業務フローやチームの一部として動く</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <span class="tag">読み違え注意</span>
+        <p>Afterは「すべてを自力構築できる」ではありません。到達点は<strong>「自分の業務を、どの方向で仕組み化できそうか判断できる」</strong>ことです。</p>
+      </div>
+    </section>
+
+    <section class="section" id="three-hours" data-toc="内容が薄いのに3時間成立する理由">
+      <div class="sec-head"><span class="sec-kicker">04 — Why 3 hours</span><h2 class="sec-title">内容が薄いのに3時間成立する理由</h2></div>
+      <div class="prose">
+        <p>実装講座として見ると薄い。にもかかわらず成立するのは、受講者が求めるものが実装手順の完全習得ではなく<strong>「AI活用の現在地と未来地図」</strong>だから。応用編の3時間は知識の習熟ではなく、次の認知整理に使われています。</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-n">01</span><span class="step-body">自分がやっている<b>単発AI利用の限界</b>を認識する</span></div>
+        <div class="step"><span class="step-n">02</span><span class="step-body">繰り返し指示を再利用可能にできると知る</span></div>
+        <div class="step"><span class="step-n">03</span><span class="step-body">外部連携には複数の道があると知る</span></div>
+        <div class="step"><span class="step-n">04</span><span class="step-body">定期実行や常駐化を、今すぐ全部できなくても方向性として理解する</span></div>
+        <div class="step"><span class="step-n">05</span><span class="step-body">自分の業務なら何を仕組み化・自動化・連携すべきか考える</span></div>
+        <div class="step"><span class="step-n">06</span><span class="step-body">Q&amp;Aで技術的不安を言語化する</span></div>
+        <div class="step"><span class="step-n">07</span><span class="step-body">上位支援や法人導入の必要性を感じる</span></div>
+      </div>
+      <div class="callout">
+        <span class="tag">結論</span>
+        <p>この講座は「手順書」ではなく<strong>「見取り図」</strong>。受講者は全部できるようになるためではなく、<strong>次にどこへ進むべきかを知るため</strong>に3時間を使う。広く薄いことは合理的です。</p>
+      </div>
+    </section>
+
+    <section class="section" id="satisfaction" data-toc="満足度が高くなり得た要因">
+      <div class="sec-head"><span class="sec-kicker">05 — Satisfaction drivers</span><h2 class="sec-title">満足度が高くなり得た要因</h2></div>
+      <div class="factors">
+        <div class="factor"><div class="factor-head"><span class="factor-n">1</span><h4>未来感が強い</h4></div><p>新しい言葉や概念が多い。理解負荷にもなるが、同時に未来感を作る。内容が浅くても「世界が広がった感覚」が残ります。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">2</span><h4>基礎編で生まれた不満に答えている</h4></div><p>毎回指示を書く面倒、繰り返し、外部連携、勝手に動いてほしい——その不満に「名前と解決方向」を与える。「ちゃんと解決できる」と分かることが満足を生みます。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">3</span><h4>実装できなくても意思決定できる</h4></div><p>「何を内製し、何を外部支援に頼み、何をまだ触らないか」を判断できる。優先順位が分かるだけでも経営層・管理職には価値があります。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">4</span><h4>専門用語を「可能性のラベル」に</h4></div><p>詳細仕様ではなく可能性のラベルとして提示。「最新のAI活用の言葉を知った」という安心や前進感につながります。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">5</span><h4>配布物が「進められそう感」を作る</h4></div><p>実践例・設定テンプレ・ガイド・復習ワークは、講座後に戻れる足場。範囲が広く消化しきれない欠点を配布物が補います。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">6</span><h4>上位支援への必要性が自然に生まれる</h4></div><p>「ここから先は自分だけでは難しそう」と感じさせる。基礎編は「自分でもできそう」、応用編は「一部できるが本格導入には支援があると早い」。法人研修・個別相談への導線が自然になります。</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="structure" data-toc="全体構成と冒頭設計">
+      <div class="sec-head"><span class="sec-kicker">06 — Structure</span><h2 class="sec-title">全体構成と冒頭設計</h2></div>
+      <div class="steps">
+        <div class="step"><span class="step-n">01</span><span class="step-body"><b>冒頭</b> — 最新活用と自動化の未来像</span></div>
+        <div class="step"><span class="step-n">02</span><span class="step-body"><b>基礎編の復習</b> — PC上の業務を扱う前提確認</span></div>
+        <div class="step"><span class="step-n">03</span><span class="step-body"><b>再利用</b> — 繰り返し業務を資産として保存する</span></div>
+        <div class="step"><span class="step-n">04</span><span class="step-body"><b>外部連携</b> — つなぎ方の違いと使い分け</span></div>
+        <div class="step"><span class="step-n">05</span><span class="step-body"><b>定期実行</b> — 習慣化・自動通知</span></div>
+        <div class="step"><span class="step-n">06</span><span class="step-body"><b>役割分担</b> — 並列処理・ファクトチェック</span></div>
+        <div class="step"><span class="step-n">07</span><span class="step-body"><b>常駐化</b> — PCを閉じても動く未来像</span></div>
+        <div class="step"><span class="step-n">08</span><span class="step-body"><b>復習とCTA</b> — 自分の業務で何を仕組み化するか決める</span></div>
+      </div>
+      <div class="callout">
+        <span class="tag">冒頭の役割</span>
+        <p>応用編の冒頭は基礎操作の再説明ではなく<strong>「なぜ次へ進むのか」の納得</strong>。ただし初心者寄りには情報過多になりやすい。全キーワードを並べず、次の1本線に整理すると伝わります。</p>
+        <div class="steps" style="margin-top:14px;">
+          <div class="step"><span class="step-n">1</span><span class="step-body">毎回の指示を保存する</span></div>
+          <div class="step"><span class="step-n">2</span><span class="step-body">外部サービスにつなぐ</span></div>
+          <div class="step"><span class="step-n">3</span><span class="step-body">定期的に動かす</span></div>
+          <div class="step"><span class="step-n">4</span><span class="step-body">複数のAIに役割分担させる</span></div>
+        </div>
+        <p style="margin-top:12px;">この順番なら、専門用語が「謎の新語」ではなく<strong>業務課題への解決策</strong>として入ります。</p>
+      </div>
+    </section>
+
+    <section class="section" id="parts" data-toc="各パートで扱っていた内容">
+      <div class="sec-head"><span class="sec-kicker">07 — Parts</span><h2 class="sec-title">各パートで扱っていた内容</h2></div>
+      <div class="parts">
+        <div class="part"><span class="part-n">1</span><div><h4>繰り返し業務の再利用（Skills）</h4><p>指示・出力形式・作業手順・判断基準を保存し再利用。属人的なプロンプトを業務資産へ変えます。</p><p><strong>応用編で最も実務価値が高い。</strong>非エンジニアでも効果を感じやすく、基礎編の業務ルール化から自然につながる。「毎回同じ説明をしている」痛みに直接答えます。自社版では主軸をここに置くのが安全。</p></div></div>
+        <div class="part"><span class="part-n">2</span><div><h4>整理（PARA）</h4><p>プロジェクト・エリア・リソース・アーカイブで整理。大量に作るより使い続けられる構造にします。</p><p>地味だが長期利用に重要。放置すると「作ったけど使わない」状態に。独立テーマではなく「増えても迷わない整理法」として短く扱うのが適切です。</p></div></div>
+        <div class="part"><span class="part-n">3</span><div><h4>外部連携（CLI / MCP / API）</h4><p>外部連携の方法と使い分け。技術網羅より「どの用途ならどの接続方法か」が中心です。</p><p><strong>最も置いていく危険がある。</strong>技術仕様ではなく用途で分ける — 既にPCにある道具をAIから呼ぶ／外部サービスに安全につなぐ窓口／サービス同士を直接つなぐ。実装者にするのではなく、判断できるように。</p></div></div>
+        <div class="part"><span class="part-n">4</span><div><h4>定期実行（Routines / Cron）</h4><p>定期発生業務を自動実行。日次レポート・通知・投稿・リマインドなど時間トリガーが題材です。</p><p>期待が大きい領域。ただし失敗時の責任が絡むため、初心者には「完全自動化」より<strong>「人間確認つきの半自動化」</strong>として扱うべき。夢を見せつつ危険に踏み込みすぎない。</p></div></div>
+        <div class="part"><span class="part-n">5</span><div><h4>役割分担（Subagents）</h4><p>複数のAIに役割を分け、調査・作成・検証・事実確認を並列／分担します。</p><p>未来感が強く応用編らしさを作る。教えるべき本質は機能ではなく<strong>役割分担の考え方</strong> — 調べるAI・書くAI・チェックするAI・事実確認するAIに分ける。こう説明すれば非エンジニアにも伝わります。</p></div></div>
+        <div class="part"><span class="part-n">6</span><div><h4>常駐化（OpenClaw 相当）</h4><p>常駐型・自律実行・PCを閉じても動くAIの未来像。完全実装より方向性の理解が役割です。</p><p>実装テーマというより<strong>世界観の提示</strong>。導入難易度は高い。「今日やること」ではなく「この先の方向性」として切り分けるべき。本編演習に入れすぎると消化不良になります。</p></div></div>
+        <div class="part"><span class="part-n">7</span><div><h4>復習と業務適用</h4><p>学んだ要素を週次・月次・四半期業務へ当てはめる復習ワーク。</p><p>広く薄い講座を実務に戻す重要な装置。キーワードが多いため、最後に「自分のどの業務を仕組み化するか」へ戻さないと未来機能紹介で終わる。<strong>自社版ではこの復習ワークをもっと重くしてよい。</strong></p></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="work" data-toc="ワーク・演習の内容">
+      <div class="sec-head"><span class="sec-kicker">08 — Exercises</span><h2 class="sec-title">ワーク・演習の内容</h2></div>
+      <div class="work-list">
+        <div class="work-item"><b>日次レポート自動化</b><span>定期実行の分かりやすい題材</span></div>
+        <div class="work-item"><b>繰り返し業務の特定</b><span>再利用化の対象を見つける</span></div>
+        <div class="work-item"><b>業務手順の保存</b><span>毎回の指示を資産化する体験</span></div>
+        <div class="work-item"><b>連携方法の選定</b><span>つなぎ方の判断軸を持つ</span></div>
+        <div class="work-item"><b>発信のルーチン化</b><span>投稿業務の半自動化を想像</span></div>
+        <div class="work-item"><b>定期実行の設定</b><span>時間トリガーの価値を見せる</span></div>
+        <div class="work-item"><b>役割分担の設計</b><span>複数役割で業務品質を上げる</span></div>
+        <div class="work-item"><b>常駐型の理解</b><span>自動実行の未来像を掴む</span></div>
+        <div class="work-item"><b>復習ワーク</b><span>週次・月次・四半期で自動化候補を決める</span></div>
+      </div>
+      <div class="callout">
+        <p>手を動かす密度は浅いが、<strong>いろいろな職種に刺さる入口を複数用意</strong>している。日報・投稿・調査・外部連携にそれぞれ刺さる人が出る。リード商材としてはこの広さが有利に働きます。</p>
+      </div>
+    </section>
+
+    <section class="section" id="handout" data-toc="配布物の役割">
+      <div class="sec-head"><span class="sec-kicker">09 — Handouts</span><h2 class="sec-title">配布物の役割</h2></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>配布物</th><th>役割</th></tr></thead>
+          <tbody>
+            <tr><td class="t-key">業務ルールのテンプレート</td><td>基礎編の復習と、仕組み化前の業務ルール整理</td></tr>
+            <tr><td class="t-key">業務効率化プロンプト集</td><td>再利用や定期実行の元ネタになる業務指示集</td></tr>
+            <tr><td class="t-key">業務自動化チェックリスト</td><td>仕組み化する業務を選ぶための棚卸し</td></tr>
+            <tr><td class="t-key">実践パターン集</td><td>作り方と実務パターンの参考</td></tr>
+            <tr><td class="t-key">連携設定テンプレート</td><td>外部サービス連携の設定例・導入補助</td></tr>
+            <tr><td class="t-key">応用編 投影資料</td><td>全体の概念・演習・未来像・CTAの軸</td></tr>
+            <tr><td class="t-key">セットアップガイド</td><td>環境準備と不安解消</td></tr>
+            <tr><td class="t-key">常駐型AIの資料</td><td>定期実行・チーム化の未来像</td></tr>
+            <tr><td class="t-key">復習ワーク</td><td>受講後に何を仕組み化するかを決める</td></tr>
+            <tr><td class="t-key">応用編 Q&amp;A</td><td>技術的不安・費用・共有・セキュリティへの補足</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <p>応用編の配布物は薄さを補うというより<strong>広さを許容させる装置</strong>。「今日地図をもらい、あとで必要な場所から掘る」設計です。</p>
+      </div>
+    </section>
+
+    <section class="section" id="anxiety" data-toc="参加者が不安に感じていたこと">
+      <div class="sec-head"><span class="sec-kicker">10 — Anxieties</span><h2 class="sec-title">参加者が不安に感じていたこと</h2></div>
+      <div class="anx-list">
+        <span class="anx">どう作り始めればよいか</span>
+        <span class="anx">作ったものが増えすぎたらどう管理するか</span>
+        <span class="anx">名前や粒度をどう決めるか</span>
+        <span class="anx">連携方法の違いが分からない</span>
+        <span class="anx">外部サービス連携で何ができるか</span>
+        <span class="anx">利用料金や従量課金が怖い</span>
+        <span class="anx">会社の情報を外部連携してよいか</span>
+        <span class="anx">設定でつまずく</span>
+        <span class="anx">作ったものをチームで共有してよいか</span>
+        <span class="anx">最新機能が変わったら追従できるか</span>
+        <span class="anx">常駐型を実運用できるか</span>
+      </div>
+      <div class="deep-anx">
+        <span class="tag">表面の奥にある不安</span>
+        <p>深い不安は<strong>「便利そうだが、自分には運用できないのではないか」</strong>。応用編は基礎編より明らかに難しく、期待と同時に「自分だけでは続けられないかも」が生まれる。これは悪いものではなく、<strong>適度な不安が上位支援への導線</strong>になる。ただし大きすぎると満足度を下げるので、最後に「まず1つだけ仕組み化」「外部連携は後でよい」「完全自動化でなく人間確認つきでよい」と明確に落とす必要があります。</p>
+      </div>
+    </section>
+
+    <section class="section" id="cta" data-toc="クロージングとCTA">
+      <div class="sec-head"><span class="sec-kicker">11 — Closing &amp; CTA</span><h2 class="sec-title">クロージングとCTA</h2></div>
+      <div class="prose">
+        <p>クロージングは「すぐ全部実装する」より<strong>「自分の業務のどこを仕組み化するか決める」</strong>方向へ落とす。復習ワークで週次・月次・四半期の繰り返し業務を洗い出させる。応用編は「全部できるようになった」ではなく「どこから仕組み化するか見えた」に落とすべき講座です。</p>
+      </div>
+      <div class="cta-list">
+        <div class="cta-item"><span class="cn">1</span><span><b>実践講座・上位講座</b> — <span>応用機能を実業務で実装する段階へ</span></span></div>
+        <div class="cta-item"><span class="cn">2</span><span><b>AI入門・関連講座</b> — <span>周辺スキルや基礎復習へ</span></span></div>
+        <div class="cta-item"><span class="cn">3</span><span><b>法人研修</b> — <span>社内導入・業務自動化・AI人材育成へ</span></span></div>
+        <div class="cta-item"><span class="cn">4</span><span><b>個別相談</b> — <span>業務フロー・セキュリティ・外部連携の相談</span></span></div>
+        <div class="cta-item"><span class="cn">5</span><span><b>アンケート</b> — <span>課題回収・次案内・資料配布との接続</span></span></div>
+      </div>
+      <div class="callout">
+        <p>応用編は基礎編より個別相談や法人導入につながりやすい。受講者が<strong>「可能性は見えたが、自分だけで全部は難しい」</strong>と感じるからです。</p>
+      </div>
+    </section>
+
+    <section class="section" id="translate" data-toc="自社版へ翻訳するなら">
+      <div class="sec-head"><span class="sec-kicker">12 — Translate to our product</span><h2 class="sec-title">自社版へ翻訳するなら</h2></div>
+      <div class="translate">
+        <div class="tcard keep">
+          <div class="tcard-head"><span class="tbadge">＋</span><h4>残すべきもの</h4></div>
+          <ul>
+            <li>毎回同じ指示の痛みから「再利用」へ進む構成</li>
+            <li>「まず完璧に自動化しない。繰り返し業務を1つ選ぶ」</li>
+            <li>連携方法を業務選定の観点で教える</li>
+            <li>定期実行・外部連携・役割分担を日次/週次の具体例に落とす</li>
+            <li>セキュリティ・人間の確認・権限管理を必ず扱う</li>
+            <li>復習ワークで週次・月次・四半期の自動化候補を決めさせる</li>
+          </ul>
+        </div>
+        <div class="tcard cut">
+          <div class="tcard-head"><span class="tbadge">−</span><h4>削る・変更すべきもの</h4></div>
+          <ul>
+            <li>特定時点の新機能・モデル名への依存</li>
+            <li>大きな数字を主価値にしすぎない</li>
+            <li>常駐型AIは未来像・上位講座導線として分ける</li>
+            <li>全テーマを深く扱わず、演習の主軸を1〜2個に絞る</li>
+            <li>法人向けは、データ分類・権限・監査・人間承認を強める</li>
+          </ul>
+        </div>
+        <div class="tcard boost">
+          <div class="tcard-head"><span class="tbadge">↑</span><h4>強めるべき設計</h4></div>
+          <ul>
+            <li>基礎編の復習は短く、単発利用の限界を言語化</li>
+            <li>「再利用」を主軸に、実際に1つ作る</li>
+            <li>連携は用途別の選び方に留める</li>
+            <li>定期実行・役割分担は業務例で理解させる</li>
+            <li>常駐化は未来像・上位講座導線へ</li>
+            <li>最後に受講者ごとの自動化ロードマップを1つ作る</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout">
+        <p>満足度は「全部分かった」ではなく<strong>「自分の業務をどの方向で仕組み化すべきか分かった」</strong>から生まれる。情報量を増やすより、「今日から何を仕組み化するか」「外部連携は後で何を検討するか」「上位支援が必要な領域はどこか」を分けて持ち帰らせる方が満足度は高くなります。</p>
+      </div>
+    </section>
+
+    <div class="next-nav">
+      <a class="next-card is-prev accent-basic" href="01.html">
+        <span class="nlab">← 前の段階</span>
+        <span class="ntitle">Uravation基礎編</span>
+        <span class="nsub">PC上でAIに任せる</span>
+      </a>
+      <a class="next-card is-next" href="original.html">
+        <span class="nlab">比較する →</span>
+        <span class="ntitle">NightEffect案</span>
+        <span class="nsub">スライドSkillを軸にした新しい基礎編案</span>
+      </a>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>AI業務活用セミナー — Uravation応用編</span>
+    <span class="mono">Uravation基礎編 · Uravation応用編</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var tocList = document.getElementById('tocList');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.section[data-toc]'));
+    var links = [];
+    sections.forEach(function (sec) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + sec.id;
+      a.textContent = sec.getAttribute('data-toc');
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var top = sec.getBoundingClientRect().top + window.pageYOffset - 78;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      });
+      li.appendChild(a);
+      tocList.appendChild(li);
+      links.push({ a: a, sec: sec });
+    });
+    var map = {};
+    links.forEach(function (l) { map[l.sec.id] = l.a; });
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          links.forEach(function (l) { l.a.classList.remove('active'); });
+          if (map[entry.target.id]) map[entry.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-78px 0px -70% 0px', threshold: 0 });
+    links.forEach(function (l) { observer.observe(l.sec); });
+  })();
+</script>
+
+</body>
+</html>

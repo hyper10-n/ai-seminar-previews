@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja" data-doc="advanced">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Uravation応用編｜3時間タイムライン — AI業務活用セミナー</title>
+<meta name="description" content="応用編の3時間を、Skills・外部接続・Routineへと広げる流れで時系列に追うタイムライン。延長Q&Aの論点も併記。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260701-header-sync" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">AI</div>
+      <div class="brand-text">
+        <b>AI業務活用セミナー</b>
+        <span>講座コンテンツ・レポート</span>
+      </div>
+    </a>
+    <nav class="pagenav">
+      <a href="index.html">概要</a>
+      <a href="01.html">Uravation基礎編</a>
+      <a href="02.html" class="current">Uravation応用編</a>
+      <a href="original.html">NightEffect案</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="eyebrow">Uravation応用編 · 3時間タイムライン</span>
+  <h1>Claude Codeを「仕組み化・外部接続・常時稼働」へ広げる回</h1>
+  <p class="hero-sub">話の中心は、Skillsで定型業務を部品化し、CLI/API/MCP/Playwrightで外部ツールに接続し、Routine・Subagents・Agent Teamsで継続実行や並列化へ進めることです。</p>
+  <div class="tl-toggle">
+    <a href="02.html">分析レポート</a>
+    <a href="timeline-02.html" class="current">タイムライン</a>
+  </div>
+</section>
+
+<div class="rail-wrap" style="padding-top: 18px;">
+  <div class="rail-label-row">受講者が進む4つの段階</div>
+  <div class="rail">
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">STAGE 0</span>
+      <span class="rail-headline">ブラウザでAIに聞く</span>
+      <span class="rail-sub">いまの現在地</span>
+    </div>
+    <a class="rail-node is-doc is-link" data-accent="basic" href="01.html">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation基礎編</span>
+      <span class="rail-headline">PC上でAIに任せる</span>
+      <span class="rail-sub">成果物を作る</span>
+    </a>
+    <div class="rail-node is-doc is-active">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation応用編</span>
+      <span class="rail-headline">頼み方を仕組みにする</span>
+      <span class="rail-sub">再利用・連携・自動化</span>
+    </div>
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">FUTURE</span>
+      <span class="rail-headline">AIが常駐して動く</span>
+      <span class="rail-sub">業務システム化</span>
+    </div>
+  </div>
+</div>
+
+<main class="tl-main">
+  <div class="tl-summary">
+    <span class="eyebrow">この回の到達点</span>
+    <p>01で覚えた手作業の依頼を、<strong>再利用できるSkill、外部サービス連携、定期実行、複数AIの分担</strong>に発展させる。</p>
+    <div class="chips">
+      <span class="chip">応用</span>
+      <span class="chip">Skills</span>
+      <span class="chip">CLI/API/MCP</span>
+      <span class="chip">Routine</span>
+      <span class="chip">Agent Teams</span>
+    </div>
+  </div>
+
+  <div class="tl-secthead">
+    <h2 class="sec-title">上から順に見る3時間タイムライン</h2>
+    <p>応用編は実際のアーカイブが3時間を超えてQ&amp;Aまで続きます。ここでは本編3時間を主軸にし、最後に延長Q&amp;Aの論点を別枠でまとめています。</p>
+  </div>
+
+  <ol class="timeline">
+    <li class="event">
+      <div class="time">0:00-0:02</div>
+      <article class="event-card">
+        <span class="ev-tag">運営案内</span>
+        <h3>Notion、作業フォルダ、VS Code、アーカイブ前提の確認</h3>
+        <p>配布プロンプトや資料の置き場所、作業フォルダの作成、VS CodeとClaude Code拡張の確認から開始。応用編は情報量が多いため、アーカイブ視聴前提で進めると案内。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>ターミナルを2つ開けると、片方で作業、片方で確認や別タスクを動かしやすい。</div>
+          <div class="note"><strong>質問例</strong>「作業フォルダはどこに作ればいいですか」「Notionの資料はどれを開けばいいですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:02-0:06</div>
+      <article class="event-card">
+        <span class="ev-tag">導入</span>
+        <h3>AIに仕事をさせる段階から、仕組みを作らせる段階へ</h3>
+        <p>応用編のテーマを「Claude Codeに仕組みを作らせる」と定義。01基礎編ではファイル作成・整理まで、02では再利用・連携・自動化まで進めると線引きする。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>応用編ではその場で全部できるより、あとで自分の業務に移植できる見取り図を持つことが重要。</div>
+          <div class="note"><strong>問いかけ</strong>「AIに一回頼む仕事を、毎回使える仕組みにできないか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:06-0:12</div>
+      <article class="event-card">
+        <span class="ev-tag">実例</span>
+        <h3>SNS、Slack日報、請求書、1on1準備、小さなアプリまで実例を一気に見せる</h3>
+        <p>毎朝のSNS投稿、Slack日報、請求書・Gmail下書き、ダウンロード整理、記事作成、顧客別CLAUDE.md、1on1準備、社内資料管理、小さなWebアプリなどを紹介。講師自身が多数のSkillsやMCPを運用している話も出る。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>応用編の題材は「毎回同じ流れだが、入力だけ変わる業務」が向いている。</div>
+          <div class="note"><strong>質問例</strong>「自分の職種なら、どの業務をSkill化できますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:12-0:17</div>
+      <article class="event-card">
+        <span class="ev-tag">基礎復習</span>
+        <h3>Claude Code、CLAUDE.md、Claude Work/Web/Desktopの違いを復習</h3>
+        <p>Claude CodeはPC上でファイルを読み書きするAIエージェント、CLAUDE.mdは仕事の前提やルールを渡す設定ファイル、と再確認。Claude Workやブラウザ版・デスクトップ版との違いも整理する。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>応用編の前提は、CLAUDE.mdで作業ルールを渡せること。ここが弱いとSkillも不安定になる。</div>
+          <div class="note"><strong>質問例</strong>「プロジェクトごとにCLAUDE.mdを分けるべきですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:17-0:20</div>
+      <article class="event-card">
+        <span class="ev-tag">全体地図</span>
+        <h3>手動指示、Skill、外部接続、Routine、常時稼働のピラミッド</h3>
+        <p>Claude Code活用を段階で整理。単発プロンプト、Skill化、CLI/API/MCPによる外部接続、Routineによる定期実行、OpenClawなどの常時稼働へ進む流れを提示。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>いきなりMCPや常時稼働に行かず、まずはSkillで業務手順を固める。</div>
+          <div class="note"><strong>質問例</strong>「これはSkillで十分か、外部接続が必要か、どう判断しますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:20-0:21</div>
+      <article class="event-card">
+        <span class="ev-tag">参加者入力</span>
+        <h3>自分が自動化したい反復業務をチャットに出す</h3>
+        <p>リサーチ、SNS、議事録、問い合わせ対応、請求書、GA分析、スライド作成など、参加者の繰り返し業務を集める。以降のSkillsやRoutineの話を、自分ごとにするための入口。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>候補を出すときは「頻度」「入力」「出力」「判断の有無」を一緒に書くと後でSkill化しやすい。</div>
+          <div class="note"><strong>問いかけ</strong>「毎朝・毎週・毎月、同じようにやっている作業は何ですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:21-0:35</div>
+      <article class="event-card">
+        <span class="ev-tag">第1部 Skills</span>
+        <h3>長いプロンプトを再利用可能なSkillに変える</h3>
+        <p>Skillは、毎回打っていた長い指示や手順をパッケージ化したものとして説明。呼び出し方はスラッシュコマンド、自然言語、Skill同士の連鎖があり、実務では自然言語で呼べる状態が扱いやすいと説明する。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>英語のコマンド名を覚えなくても、「週報を作って」「請求書を作って」と自然文で呼べる設計にする。</div>
+          <div class="note"><strong>質問例</strong>「この毎回のプロンプトをSkillにしてください」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:35-0:45</div>
+      <article class="event-card">
+        <span class="ev-tag">Skillの中身</span>
+        <h3>SKILL.md、description、入力・処理・出力を設計する</h3>
+        <p>SkillはフォルダとSKILL.mdで構成され、descriptionでいつ呼ばれるかを示す。Claude Code自身にSkillを作らせる流れ、前提条件、禁止事項、出力形式の書き方を扱う。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>descriptionは短すぎると呼ばれず、広すぎると関係ない場面で呼ばれる。用途を絞って書く。</div>
+          <div class="note"><strong>質問例</strong>「この業務の入力・処理・出力を整理して、Skill仕様にして」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:45-1:01</div>
+      <article class="event-card">
+        <span class="ev-tag">Skill実践</span>
+        <h3>議事録、提案書、メール、請求書、SNS、週報のSkill例</h3>
+        <p>会議メモから提案書、名刺OCRからCSV、メール返信、請求書作成、SNS一括投稿、週報作成などの例を通じて、Skillの作り方と育て方を説明。親Skillから複数Skillを呼ぶ「朝のルーティン」的な構成にも触れる。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>最初は荒いV1で作り、実行結果を見てV2、V3と改善する方が現実的。</div>
+          <div class="note"><strong>質問例</strong>「このSkillを使ってみて、失敗した点を反映して改善して」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event break">
+      <div class="time">1:01-1:14</div>
+      <article class="event-card">
+        <span class="ev-tag">休憩・補足</span>
+        <h3>Skillの読み込み、管理、プロジェクト単位の考え方を補足</h3>
+        <p>VS Codeの再読み込み、グローバルSkillとプロジェクトSkill、Skill一覧の見方、Skillが多くなったときの整理などを補足。Skillを「魔法技」、SKILL.mdを「技の説明書」のようにたとえて説明する場面もある。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>Skillが反映されないときは、VS CodeやClaude Codeセッションを再読み込みする。</div>
+          <div class="note"><strong>質問例</strong>「作ったSkillが呼ばれません。どこを確認すればいいですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:14-1:22</div>
+      <article class="event-card">
+        <span class="ev-tag">第2部 外部接続</span>
+        <h3>MCPを「外部ツールにつなぐ口」として理解する</h3>
+        <p>MCPはClaude CodeがGmail、カレンダー、Notion、GitHubなど外部サービスに触るための接続口として説明。ただし実務ではMCP一択ではなく、CLIやAPIラッパーの方が安定する場面も多いと整理。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>使えるなら公式CLI、なければAPIやMCP、最後にPlaywrightという優先順位で考える。</div>
+          <div class="note"><strong>質問例</strong>「このサービスはMCPでつなぐべきですか、CLIで十分ですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:22-1:32</div>
+      <article class="event-card">
+        <span class="ev-tag">接続手段</span>
+        <h3>CLI/API、Playwright、Vercel、ffmpeg、yt-dlpを使い分ける</h3>
+        <p>CLIは文脈消費が少なく安定しやすいこと、MCPは便利だがコンテキストを消費すること、ブラウザ操作しか道がない場合はPlaywrightを使うことを説明。YouTube文字起こし取得や小さなアプリ共有の例も出る。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong><code>/context</code>でコンテキスト使用量を確認し、重いMCPを常時抱えすぎない。</div>
+          <div class="note"><strong>質問例</strong>「このYouTubeから文字起こしを取り、要約Skillで処理して」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:32-1:50</div>
+      <article class="event-card">
+        <span class="ev-tag">外部接続ワーク</span>
+        <h3>自分の業務で、どの外部サービスにつなぐべきか考える</h3>
+        <p>Gmail、Google Drive、Slack、Notion、カレンダー、SNS、YouTube、会計系サービスなど、自分の業務入力・出力がどこにあるかを洗い出す。Skillだけで済むのか、外部接続が必要なのかを分ける。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>外部接続の前に、手元ファイルだけで再現できる小さなプロトタイプを作ると失敗しにくい。</div>
+          <div class="note"><strong>問いかけ</strong>「あなたの業務の入力はどのサービスにあり、出力はどこへ置きますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event break">
+      <div class="time">1:50-2:18</div>
+      <article class="event-card">
+        <span class="ev-tag">質疑・転換</span>
+        <h3>外部接続の疑問を拾い、定期実行パートへ移る</h3>
+        <p>APIキー、権限、どのツールを使うべきか、NotionやGoogle Driveとの付き合い方などの質問を挟みながら、単発接続から「決まったタイミングで実行する」話へ移る。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>APIキーや認証情報は、資料やチャットにそのまま貼らず、環境変数や安全な保存方法を使う。</div>
+          <div class="note"><strong>質問例</strong>「会社アカウントのデータを扱う場合、どこまでClaude Codeに触らせていいですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event routine">
+      <div class="time">2:18-2:31</div>
+      <article class="event-card">
+        <span class="ev-tag">第3部 Routine</span>
+        <h3>Routine、loop、ローカル常駐、OpenClawの違い</h3>
+        <p>Claude Routineはクラウド側で定期実行できるが、PCのローカルフォルダには直接触れない。Google Drive同期などを使うと橋渡しできる。短い監視は<code>/loop</code>、日次・週次はRoutine、常時稼働はOpenClawという使い分けを説明。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>PCを閉じても動かしたいならRoutine、ローカルファイル監視ならPC側で動かす仕組みを考える。</div>
+          <div class="note"><strong>質問例</strong>「毎朝6時にAIニュースを調べてSNS案を作るなら、Routineでできますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event routine">
+      <div class="time">2:31-2:42</div>
+      <article class="event-card">
+        <span class="ev-tag">定期実行ワーク</span>
+        <h3>毎日・毎週・毎月の候補を出し、実行方式を選ぶ</h3>
+        <p>受講者が自分の定期業務を洗い出し、Routine向きか、スケジュール実行向きか、OpenClaw向きかを選ぶ。SNS投稿、請求書チェック、夜間リサーチ、月次レポートなどの例を扱う。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>最新情報を扱うRoutineには「必ずWebで最新情報を確認する」と明示する。</div>
+          <div class="note"><strong>問いかけ</strong>「毎日、毎週、毎月のどれで自動実行したい仕事ですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event routine">
+      <div class="time">2:42-2:50</div>
+      <article class="event-card">
+        <span class="ev-tag">Subagents</span>
+        <h3>複数のAIに役割を分けて並列に働かせる</h3>
+        <p>SubagentやAgent Teamsは、親エージェントが全体を見て、子エージェントに調査、レビュー、実装、分析などを分担させる考え方。独立したタスクが複数あるときや、複数視点のレビューに向いている。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>同じ文脈を共有しすぎるより、調査A・調査B・レビューCのように独立させると並列化しやすい。</div>
+          <div class="note"><strong>質問例</strong>「この企画を、営業視点・運用視点・リスク視点の3人のSubagentでレビューして」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event routine">
+      <div class="time">2:50-3:00</div>
+      <article class="event-card">
+        <span class="ev-tag">統合</span>
+        <h3>Skill、外部接続、Routine、Agent Teamsを自分の業務に当てはめる</h3>
+        <p>最後は、どの業務をSkill化し、どこで外部接続し、何を定期実行し、どこを複数AIで分担させるかを整理する流れ。3時間本編のあと、具体的な疑問は延長Q&amp;Aで深掘りされる。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>一気に全部を自動化するより、Skill化、接続、定期実行の順に一段ずつ積む。</div>
+          <div class="note"><strong>質問例</strong>「この業務を、Skill、外部接続、Routineに分解して設計して」</div>
+        </div>
+      </article>
+    </li>
+  </ol>
+
+  <section class="extension" aria-labelledby="extension-title">
+    <h2 id="extension-title">3時間後の延長Q&amp;Aで話していた主な論点</h2>
+    <div class="ext-grid">
+      <article class="ext-item">
+        <h3>Skill設計と管理</h3>
+        <p>Skillが短すぎる・広すぎる問題、グローバルSkillとプロジェクトSkill、Skill一覧の整理、slash commandとの違い、英語名の付け方。</p>
+      </article>
+      <article class="ext-item">
+        <h3>セキュリティと権限</h3>
+        <p>APIキー、請求書や銀行CSVの扱い、会社データのマスキング、Claude Codeのpermission設定、危険操作をCLAUDE.mdで縛る話。</p>
+      </article>
+      <article class="ext-item">
+        <h3>外部接続の判断</h3>
+        <p>Notion、Google Drive、OneDrive、Gmail、Slack、Playwright、LINE、X API、Webスクレイピングをどう選ぶか。公式CLIやAPIを優先する考え方。</p>
+      </article>
+      <article class="ext-item">
+        <h3>コンテキストと記憶</h3>
+        <p><code>/compact</code>、<code>/clear</code>、<code>/rewind</code>、セッション分け、Subagentの独立コンテキスト、CLAUDE.mdやmemoryで何を覚えさせるか。</p>
+      </article>
+      <article class="ext-item">
+        <h3>事実確認と情報収集</h3>
+        <p>AIの情報源、ネット検索結果の検証、複数ソース確認、別AIによるクロスチェック、ニュース収集Routineの作り方。</p>
+      </article>
+      <article class="ext-item">
+        <h3>仕事設計の考え方</h3>
+        <p>PARA整理、CodexやCursorとの役割分担、NotionとClaude Codeの使い分け、AI時代に人間が介入すべきポイント。</p>
+      </article>
+    </div>
+  </section>
+
+  <p class="tl-source">参照: 02-advanced の動画文字起こし、投影資料、配布PDF/Notion、00-overview の video confirmed summary。逐語引用ではなく、講義の流れが分かるよう要約しています。</p>
+
+  <div class="next-nav">
+    <a class="next-card is-prev accent-basic" href="timeline-01.html">
+      <span class="nlab">← 前の段階</span>
+      <span class="ntitle">Uravation基礎編 タイムライン</span>
+      <span class="nsub">PC上で成果物を作るまで</span>
+    </a>
+    <a class="next-card is-next" href="02.html">
+      <span class="nlab">同じ回の分析 →</span>
+      <span class="ntitle">Uravation応用編 レポート</span>
+      <span class="nsub">作業から仕組みへ、何が変わるか</span>
+    </a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>AI業務活用セミナー — Uravation応用編 タイムライン</span>
+    <span class="mono">Uravation基礎編 · Uravation応用編</span>
+  </div>
+</footer>
+
+</body>
+</html>

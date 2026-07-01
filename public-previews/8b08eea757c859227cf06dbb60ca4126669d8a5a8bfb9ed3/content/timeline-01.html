@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja" data-doc="basic">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Uravation基礎編｜3時間タイムライン — AI業務活用セミナー</title>
+<meta name="description" content="基礎編の3時間を、運営案内から月曜の一歩まで時系列で追うタイムライン。各ブロックにTipsと質問例を併記。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260701-header-sync" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">AI</div>
+      <div class="brand-text">
+        <b>AI業務活用セミナー</b>
+        <span>講座コンテンツ・レポート</span>
+      </div>
+    </a>
+    <nav class="pagenav">
+      <a href="index.html">概要</a>
+      <a href="01.html" class="current">Uravation基礎編</a>
+      <a href="02.html">Uravation応用編</a>
+      <a href="original.html">NightEffect案</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="eyebrow">Uravation基礎編 · 3時間タイムライン</span>
+  <h1>Claude Codeを「まず仕事で使える」状態まで持っていく回</h1>
+  <p class="hero-sub">話の中心は、Claude Codeの概念理解、VS Code上での基本操作、フォルダ整理・文書作成・データ分析・メール作成の実践、そしてCLAUDE.mdを使った安全な業務化です。</p>
+  <div class="tl-toggle">
+    <a href="01.html">分析レポート</a>
+    <a href="timeline-01.html" class="current">タイムライン</a>
+  </div>
+</section>
+
+<div class="rail-wrap" style="padding-top: 18px;">
+  <div class="rail-label-row">受講者が進む4つの段階</div>
+  <div class="rail">
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">STAGE 0</span>
+      <span class="rail-headline">ブラウザでAIに聞く</span>
+      <span class="rail-sub">いまの現在地</span>
+    </div>
+    <div class="rail-node is-doc is-active">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation基礎編</span>
+      <span class="rail-headline">PC上でAIに任せる</span>
+      <span class="rail-sub">成果物を作る</span>
+    </div>
+    <a class="rail-node is-doc is-link" data-accent="advanced" href="02.html">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation応用編</span>
+      <span class="rail-headline">頼み方を仕組みにする</span>
+      <span class="rail-sub">再利用・連携・自動化</span>
+    </a>
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">FUTURE</span>
+      <span class="rail-headline">AIが常駐して動く</span>
+      <span class="rail-sub">業務システム化</span>
+    </div>
+  </div>
+</div>
+
+<main class="tl-main">
+  <div class="tl-summary">
+    <span class="eyebrow">この回の到達点</span>
+    <p>ChatGPTに文章を作らせてコピペする段階から、Claude Codeにローカルのファイルやフォルダを扱わせ、<strong>成果物をPC内に残す段階へ進む</strong>。</p>
+    <div class="chips">
+      <span class="chip">初級</span>
+      <span class="chip">VS Code</span>
+      <span class="chip">ファイル操作</span>
+      <span class="chip">CLAUDE.md</span>
+      <span class="chip">実務ワーク</span>
+    </div>
+  </div>
+
+  <div class="tl-secthead">
+    <h2 class="sec-title">上から順に見る3時間タイムライン</h2>
+    <p>時刻は動画文字起こしと投影資料を突き合わせた目安です。講義内のTips・質問例は各ブロックに入れています。</p>
+  </div>
+
+  <ol class="timeline">
+    <li class="event">
+      <div class="time">0:00-0:02</div>
+      <article class="event-card">
+        <span class="ev-tag">運営案内</span>
+        <h3>Zoom、Notion、アーカイブ、配布資料の確認</h3>
+        <p>Luma表示名は本名でなくてもよいこと、Notionページにセットアップ動画・配布資料・アーカイブ・アンケートがまとまっていることを案内。受講中は手を動かす前提で進めると説明。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>配布資料やアーカイブは講義中に迷子になりやすいので、最初にNotionを開いておく。</div>
+          <div class="note"><strong>質問例</strong>「資料はどこにありますか」「領収書はどこから取れますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:02-0:06</div>
+      <article class="event-card">
+        <span class="ev-tag">ゴール設定</span>
+        <h3>「AIに指示を出す人」から「AIと仕事を回す人」へ</h3>
+        <p>この3時間のゴールは、Claude Codeを理解するだけでなく、実際にAIが作ったファイルをPCの中に残すこと。ChatGPTで作った文章をWordに貼る作業から脱却する、という問題提起から入る。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>初級編では「完璧な自動化」ではなく「自分のPCで成果物ができる」ことを最初の勝ち筋にする。</div>
+          <div class="note"><strong>問いかけ</strong>「ChatGPTの出力をコピペして保存する作業を、AIに任せられたらどうか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:06-0:14</div>
+      <article class="event-card">
+        <span class="ev-tag">講師文脈</span>
+        <h3>非エンジニアでもClaude Codeを仕事に使えるという前提づくり</h3>
+        <p>講師自身の事業・AI活用状況・大量のSkillsやAgent利用の話を交えつつ、「コードが書ける人向けの道具」ではなく、最終成果物を作る業務ツールとして使う位置づけを共有。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>Claude Codeの画面にコードが出ていても、受講者が見るべきものは最終成果物とファイル構成。</div>
+          <div class="note"><strong>質問例</strong>「プログラミングができなくても使えますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:14-0:16</div>
+      <article class="event-card">
+        <span class="ev-tag">進行説明</span>
+        <h3>3時間の全体像と受講姿勢をそろえる</h3>
+        <p>第1部でClaude Codeの世界観、第2部で5本の実践ワーク、第3部でCLAUDE.mdと実業務チャレンジ、最後に月曜からの一歩とQ&amp;Aに進む構成を説明。質問はチャットで随時拾う進め方。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>初心者は「いま全部理解する」より、アーカイブで復習する前提で手を止めすぎない。</div>
+          <div class="note"><strong>質問例</strong>「難しくなったらどうすればいいですか」「途中で置いていかれたらどうしますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:16-0:20</div>
+      <article class="event-card">
+        <span class="ev-tag">概念理解</span>
+        <h3>AI活用の3段階とClaude Codeの位置づけ</h3>
+        <p>検索、生成、委任というAI活用レベルを整理。Claude Codeは「AIに聞く」だけでなく、PC上のファイルを読み書きし、作業を代行する秘書・同僚のような存在として紹介される。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>Claude Codeはチャット欄だけで完結するツールではなく、フォルダやファイルを操作する前提で考える。</div>
+          <div class="note"><strong>質問例</strong>「ChatGPTや普通のClaudeと何が違うのですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:20-0:32</div>
+      <article class="event-card">
+        <span class="ev-tag">道具の違い</span>
+        <h3>Claude Code、Claude CoWork、VS Codeの違い</h3>
+        <p>CoWorkは入口として扱いやすいが、Claude Codeは拡張性が高いという説明。VS Codeの左側のファイルツリーや複数画面で、AIの出力とファイルを同時に見られる利点を示す。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>VS Codeは「コードを書く場所」ではなく「AIとファイルを見ながら仕事する作業台」と捉える。</div>
+          <div class="note"><strong>質問例</strong>「Claude CoWorkから始めてもいいですか」「VS Codeはなぜ必要ですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:32-0:39</div>
+      <article class="event-card">
+        <span class="ev-tag">基本操作</span>
+        <h3>フォルダを見せて、まずは計画だけ出させる</h3>
+        <p>いきなり整理を実行させるのではなく、対象フォルダを確認させ、ファイル構成を分析し、整理方針を提案させる流れをデモ。実行前に一度止めることが安全運用の軸になる。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>「まだ実行せず、まず整理案だけ出してください」と書くと事故が減る。</div>
+          <div class="note"><strong>質問例</strong>「このフォルダを見て、分類案だけ出してください」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:39-0:46</div>
+      <article class="event-card">
+        <span class="ev-tag">比較整理</span>
+        <h3>ChatGPT、Claude、Codex、Cursor、NotebookLMとの使い分け</h3>
+        <p>ブラウザの生成AI、開発寄りのAI、資料読解に強いAIなどの役割を整理。Claude Codeはローカルファイルや業務フォルダを扱い、成果物まで作るところが強みだと位置づける。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>資料の読み込みだけならNotebookLM、PC内で成果物まで作るならClaude Code、と役割で選ぶ。</div>
+          <div class="note"><strong>質問例</strong>「CursorやCodexとはどう違いますか」「デスクトップ版Claudeで代替できますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:46-0:53</div>
+      <article class="event-card">
+        <span class="ev-tag">業務例</span>
+        <h3>実際の業務で何に使えるかを大量に見せる</h3>
+        <p>議事録からアクション表、ダウンロードフォルダ整理、請求書処理、画像生成、ダッシュボード、簡易サイト、日次作業などの例を紹介。参加者にも自分の反復業務をチャットに出してもらう。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>最初の題材は「毎回似ているが地味に時間がかかる仕事」が向いている。</div>
+          <div class="note"><strong>問いかけ</strong>「あなたが毎週・毎月くり返している作業は何ですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">0:53-1:00</div>
+      <article class="event-card">
+        <span class="ev-tag">FAQ</span>
+        <h3>コード不要、セキュリティ、料金、権限を先に押さえる</h3>
+        <p>プログラミング知識がなくても使えること、ファイル内容はAI側に送られるため機密情報には注意すること、Pro/Maxなど料金の考え方、危険な許可設定を避けることを説明。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>初心者は強い権限を常時許可するより、確認しながら実行する設定から始める。</div>
+          <div class="note"><strong>質問例</strong>「会社の機密ファイルを読ませてもいいですか」「料金はどれくらいかかりますか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event break">
+      <div class="time">1:00-1:05</div>
+      <article class="event-card">
+        <span class="ev-tag">休憩・調整</span>
+        <h3>難易度を一度下げ、VS Codeの見方を補足</h3>
+        <p>チャットで「難しい」という反応を受け、ペースを落としてVS Codeの基本、画面のどこを見るか、詰まったときはスクリーンショットをAIに見せる方法を補足。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>エラーや迷子になった画面は、文章で説明するよりスクリーンショットでAIに聞く方が速い。</div>
+          <div class="note"><strong>質問例</strong>「この画面で次に何を押せばいいですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:05-1:18</div>
+      <article class="event-card">
+        <span class="ev-tag">CLAUDE.md</span>
+        <h3>AIに自分の仕事ルールを覚えさせる</h3>
+        <p>CLAUDE.mdに自己紹介、フォルダ構成、業務ルール、よく使う指示、禁止事項を書いておくと、毎回の説明が減ると解説。プロジェクトごとのCLAUDE.mdが優先されることも説明。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>最初から完璧に作らず、仕事をしながら「次回からこうして」を追記して育てる。</div>
+          <div class="note"><strong>質問例</strong>「このフォルダを見て、私用のCLAUDE.mdのたたき台を作って」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:18-1:30</div>
+      <article class="event-card">
+        <span class="ev-tag">ワーク1</span>
+        <h3>フォルダ整理をClaude Codeに任せる</h3>
+        <p>ダウンロードフォルダや業務フォルダを題材に、現状確認、分類方針の提案、承認後の移動という流れを実践。古いファイルをアーカイブする考え方も出る。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>危ない本番フォルダではなく、コピーしたテストフォルダから始める。</div>
+          <div class="note"><strong>質問例</strong>「このフォルダを用途別に整理する案を出して。移動はまだしないで」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:30-1:39</div>
+      <article class="event-card">
+        <span class="ev-tag">ワーク2</span>
+        <h3>メモから議事録・報告書・PDFを作る</h3>
+        <p>ざっくりしたメモや会議内容を、見出しつきの報告書、アクションリスト、スケジュール表に整える。Markdown、PDF、Excelなど、用途に応じた形式で保存させる流れを見せる。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>ファイルが見つからないときは「生成したPDFを開いて」「保存場所を教えて」とそのまま聞く。</div>
+          <div class="note"><strong>質問例</strong>「この会議メモから、上司提出用の報告書とToDo表を作って」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:39-1:43</div>
+      <article class="event-card">
+        <span class="ev-tag">ワーク3</span>
+        <h3>CSVやExcelから分析レポートを作る</h3>
+        <p>売上CSVを月別・商品別に集計し、グラフやHTMLレポートにする例を紹介。単なる表ではなく、見て判断できるレポートに変換する方向性を示す。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>HTMLレポートは見た目を確認しやすく、あとでPDFや画像にしやすい。</div>
+          <div class="note"><strong>質問例</strong>「このCSVを分析して、売上傾向と改善示唆をHTMLで出して」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:43-1:55</div>
+      <article class="event-card">
+        <span class="ev-tag">ワーク4</span>
+        <h3>メール下書きを複数トーンで作り、再利用する</h3>
+        <p>お礼メールや依頼メールを、丁寧・カジュアル・短めなど複数トーンで作成。過去のメール文面を参照し、会社や自分の文体に寄せる運用も説明される。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>保存された下書きが見づらい場合は「チャットにも本文を表示して」とCLAUDE.mdに追記する。</div>
+          <div class="note"><strong>質問例</strong>「この内容で、取引先向けに丁寧なメールを3案作って」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">1:55-2:05</div>
+      <article class="event-card">
+        <span class="ev-tag">ワーク5</span>
+        <h3>HTML・簡易アプリ・見える成果物に変換する</h3>
+        <p>分析結果や業務情報を、HTMLページ、簡単なダッシュボード、共有しやすい資料に変える考え方を扱う。AIに文章だけでなく「画面」を作らせる方向へ広げる。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>見た目が必要な成果物は「スマホでも見やすく」「表を入れて」「印刷しやすく」など利用場面を指定する。</div>
+          <div class="note"><strong>質問例</strong>「この内容を、社内共有用の1ページHTMLにまとめて」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event break">
+      <div class="time">2:05-2:15</div>
+      <article class="event-card">
+        <span class="ev-tag">整理・休憩</span>
+        <h3>ワークの失敗パターンとプロンプトの型を整理</h3>
+        <p>指示が曖昧、対象ファイルが不明、毎回結果がぶれる、といった失敗を整理。フォルダ内容の一覧化、議事録のアクション抽出、売上分析、メール作成などの型を再確認。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>「目的」「対象ファイル」「出力形式」「まだ実行しない」を入れると安定しやすい。</div>
+          <div class="note"><strong>質問例</strong>「まず対象ファイルを確認し、不明点があれば質問してから進めて」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">2:15-2:35</div>
+      <article class="event-card">
+        <span class="ev-tag">安全運用</span>
+        <h3>CLAUDE.mdに禁止事項と作業ルールを書く</h3>
+        <p>削除禁止、システムフォルダを触らない、実行前に確認する、機密ファイルを扱わないなどのルールをCLAUDE.mdに入れる話。配布されたセキュリティ資料を読み込ませて更新する流れも扱う。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>「絶対に削除しない」「移動前に計画を提示する」など、怖い操作から先にルール化する。</div>
+          <div class="note"><strong>質問例</strong>「このセキュリティ方針を読んで、CLAUDE.mdに初心者向けの禁止事項を追加して」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event">
+      <div class="time">2:35-2:50</div>
+      <article class="event-card">
+        <span class="ev-tag">実業務化</span>
+        <h3>自分の仕事の中から最初の1タスクを選ぶ</h3>
+        <p>参加者自身の業務に引き寄せ、すぐ試す題材を1つ決める時間。議事録、日報、週報、メール、ファイル整理、データ集計など、成功しやすい小さな作業から始める方針を確認。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>初回は「今日完了できる」「失敗しても困らない」「成果物が見える」タスクを選ぶ。</div>
+          <div class="note"><strong>問いかけ</strong>「月曜の朝、Claude Codeに最初に頼む仕事は何ですか」</div>
+        </div>
+      </article>
+    </li>
+
+    <li class="event closing">
+      <div class="time">2:50-3:00</div>
+      <article class="event-card">
+        <span class="ev-tag">締め</span>
+        <h3>月曜からの一歩、Q&amp;A、応用編への接続</h3>
+        <p>アーカイブと配布資料の確認、アンケート、次回応用編、個別相談・法人研修への案内。初級編ではSkills、MCP、Agent Teams、Cron、OpenClawは深掘りせず、応用編の範囲として接続する。</p>
+        <div class="notes">
+          <div class="note"><strong>Tips</strong>受講後1週間は毎日1回、Claude Codeに小さな仕事を頼むと定着しやすい。</div>
+          <div class="note"><strong>質問例</strong>「次に進むなら、どの業務を応用編で仕組み化すべきですか」</div>
+        </div>
+      </article>
+    </li>
+  </ol>
+
+  <p class="tl-source">参照: 01-basic の動画文字起こし、投影資料、配布PDF/Notion、00-overview の video confirmed summary。逐語引用ではなく、講義の流れが分かるよう要約しています。</p>
+
+  <div class="next-nav">
+    <a class="next-card is-prev" href="01.html">
+      <span class="nlab">← 同じ回の分析</span>
+      <span class="ntitle">Uravation基礎編 レポート</span>
+      <span class="nsub">何を売り、なぜ満足するのか</span>
+    </a>
+    <a class="next-card is-next accent-advanced" href="timeline-02.html">
+      <span class="nlab">次の段階 →</span>
+      <span class="ntitle">Uravation応用編 タイムライン</span>
+      <span class="nsub">仕組み化・外部接続・常時稼働へ</span>
+    </a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>AI業務活用セミナー — Uravation基礎編 タイムライン</span>
+    <span class="mono">Uravation基礎編 · Uravation応用編</span>
+  </div>
+</footer>
+
+</body>
+</html>

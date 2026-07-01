@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja" data-doc="basic">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Uravation基礎編 — AI業務活用セミナー</title>
+<meta name="description" content="基礎編：AIが自分のPC上で仕事をする、初回体験そのものが商品になる3時間。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260701-header-sync" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">AI</div>
+      <div class="brand-text">
+        <b>AI業務活用セミナー</b>
+        <span>講座コンテンツ・レポート</span>
+      </div>
+    </a>
+    <nav class="pagenav">
+      <a href="index.html">概要</a>
+      <a href="01.html" class="current">Uravation基礎編</a>
+      <a href="02.html">Uravation応用編</a>
+      <a href="original.html">NightEffect案</a>
+    </nav>
+  </div>
+</header>
+
+<div class="rail-wrap" style="padding-top: 30px;">
+  <div class="rail">
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">STAGE 0</span>
+      <span class="rail-headline">ブラウザでAIに聞く</span>
+      <span class="rail-sub">いまの現在地</span>
+    </div>
+    <div class="rail-node is-doc is-active">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation基礎編</span>
+      <span class="rail-headline">PC上でAIに任せる</span>
+      <span class="rail-sub">成果物を作る</span>
+    </div>
+    <a class="rail-node is-doc is-link" data-accent="advanced" href="02.html">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">Uravation応用編</span>
+      <span class="rail-headline">頼み方を仕組みにする</span>
+      <span class="rail-sub">再利用・連携・自動化</span>
+    </a>
+    <div class="rail-node is-context">
+      <span class="rail-dot"></span>
+      <span class="rail-stage">FUTURE</span>
+      <span class="rail-headline">AIが常駐して動く</span>
+      <span class="rail-sub">業務システム化</span>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="目次">
+    <div class="toc-title">On this page</div>
+    <ul class="toc-list" id="tocList"></ul>
+  </nav>
+
+  <main>
+    <div class="doc-flag">
+      <span class="doc-num">01</span>
+      <span class="doc-flag-text">
+        <b>基礎編</b>
+        <span>AIが自分のPC上で仕事をする、初回体験そのものが商品になる3時間</span>
+      </span>
+    </div>
+
+    <div class="tl-toggle">
+      <a href="01.html" class="current">分析レポート</a>
+      <a href="timeline-01.html">タイムライン</a>
+    </div>
+
+    <div class="definition">
+      <span class="eyebrow">この講座の一文定義</span>
+      <p>ブラウザでAIを使う段階の受講者が、ファイル整理・資料化・データ分析・メール作成・簡易アプリ作成までを体験し、<strong>「AIに聞く」から「AIに仕事を任せる」へ移行する</strong>ための3時間講座。</p>
+    </div>
+
+    <section class="section" id="selling" data-toc="何を売っていた講座か">
+      <div class="sec-head"><span class="sec-kicker">01 — What it sold</span><h2 class="sec-title">何を売っていた講座か</h2></div>
+      <div class="prose">
+        <p>売っていたのは機能知識そのものではなく、<strong>AIが自分のPC上で実際にファイルを作り、仕事の成果物を残すという体験</strong>でした。受講者の現在地は、AIに相談して回答を Word・Excel・メール・社内資料へコピーする段階。講座はこのコピー&amp;ペースト作業を「AIがフォルダやファイルを直接扱い、成果物まで作る」段階へ進めるものとして設計されています。</p>
+        <p>内容だけを分解すると、かなり薄い。VS Codeの起動、フォルダ指定、ファイル生成、議事録整理、CSV分析、メール下書き、簡易アプリ。技術者には初歩で、3時間を満たす知識量には見えません。<strong>ただし受講者が買っていたのは知識量ではなく、「自分でもAIを業務で使う側に回れた」という自己認識の変化</strong>です。</p>
+      </div>
+      <div class="value-grid">
+        <div class="value-card"><span class="vnum">1</span><p>AIがPC上の作業環境を扱えると、文書作成・整理・分析・メール作成の体感が変わる</p></div>
+        <div class="value-card"><span class="vnum">2</span><p>業務ルールを一度書いておけば、毎回同じ説明をしなくてもAIがそれに沿って動く</p></div>
+        <div class="value-card"><span class="vnum">3</span><p>安全確認・権限・料金・機密情報の扱いを知れば、初心者でも業務利用を始められる</p></div>
+      </div>
+      <div class="callout">
+        <span class="tag">核心</span>
+        <p>これは「ツールを習得する講座」ではなく、<strong>「AI活用の段階が上がったと感じさせる講座」</strong>です。</p>
+      </div>
+    </section>
+
+    <section class="section" id="persona" data-toc="想定ペルソナ">
+      <div class="sec-head"><span class="sec-kicker">02 — Persona</span><h2 class="sec-title">想定ペルソナ</h2></div>
+      <div class="persona-grid">
+        <div class="persona">
+          <div class="persona-role">中心ペルソナ</div>
+          <h4>実務利用がまだ浅い非エンジニアのビジネス職</h4>
+          <p>経営者・個人事業主・企画・営業・マーケ・バックオフィス・士業・教育系・講師業など、文書/表/メール/会議メモ/資料作成が多い人。要約や壁打ちには触っているが、使い方はチャット欄の中で完結しています。</p>
+          <ul class="feel-list">
+            <li>AIがすごいのは分かるが、自分の業務に落とせていない</li>
+            <li>エンジニアや詳しい人だけが先に進んでいる感じがする</li>
+            <li>会社や顧客情報を入れてよいのか怖い</li>
+            <li>触って壊したり、課金されたり、戻せなくなりそう</li>
+            <li>それでも、今のうちに使える側へ行きたい</li>
+          </ul>
+        </div>
+        <div class="persona is-sub">
+          <div class="persona-role">サブペルソナ</div>
+          <h4>AI活用を社内や顧客に広げたい管理職・経営者・支援者</h4>
+          <p>自分の効率化だけでなく「初心者がどこで止まるか」「社内研修にすると何が障害か」を見に来ている層。演習の高度さより、初心者がAI業務利用へ移る導線を観察できることが価値になります。</p>
+          <p>つまり基礎編は、個人向けの体験講座であると同時に、<strong>組織導入の初回教材</strong>としても機能し得ます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ba" data-toc="受講者の Before / After">
+      <div class="sec-head"><span class="sec-kicker">03 — Before / After</span><h2 class="sec-title">受講者の Before / After</h2></div>
+      <div class="table-wrap">
+        <table class="ba">
+          <thead><tr><th>観点</th><th class="col-before">Before</th><th class="col-after">After</th></tr></thead>
+          <tbody>
+            <tr><td class="t-key">AIの使い方</td><td class="before">ブラウザで質問し、回答をコピーする</td><td class="after">PC内のファイルやフォルダをAIに扱わせる</td></tr>
+            <tr><td class="t-key">成果物</td><td class="before">回答文は得られるが、業務ファイル化は自分で行う</td><td class="after">レポート・メール・整理済みフォルダが生成される</td></tr>
+            <tr><td class="t-key">指示の粒度</td><td class="before">その場限りのプロンプト</td><td class="after">業務ルールや出力形式を残して再利用する</td></tr>
+            <tr><td class="t-key">不安</td><td class="before">難しそう、壊しそう、料金や情報漏洩が怖い</td><td class="after">許可確認・対象フォルダ・機密情報・費用の考え方を理解する</td></tr>
+            <tr><td class="t-key">次の関心</td><td class="before">AIを便利に使いたい</td><td class="after">繰り返し業務をもっと自動化したい</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <span class="tag">読み違え注意</span>
+        <p>Afterは「ツールを自走できる」ではありません。実際の到達点はもっと手前で、<strong>「自分でもAIに実務っぽい作業を頼めるかもしれない」と思えること</strong>にあります。ここを見誤ると満足度を説明できません。</p>
+      </div>
+    </section>
+
+    <section class="section" id="three-hours" data-toc="内容が薄いのに3時間成立する理由">
+      <div class="sec-head"><span class="sec-kicker">04 — Why 3 hours</span><h2 class="sec-title">内容が薄いのに3時間成立する理由</h2></div>
+      <div class="prose">
+        <p>基礎編は情報密度で3時間を満たしていません。代わりに、<strong>初心者がAI業務利用へ踏み出すときの心理的な段差を細かく刻む</strong>ことで成立させています。技術者なら数秒で流す部分が、初心者にはそれぞれ小さな恐怖になる。そのため講座の時間は「新知識の投入」よりも次の用途に使われています。</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-n">01</span><span class="step-body">AIにPC作業をさせることへの<b>恐怖を下げる</b></span></div>
+        <div class="step"><span class="step-n">02</span><span class="step-body">画面操作で迷う時間を吸収する</span></div>
+        <div class="step"><span class="step-n">03</span><span class="step-body">許可や実行前確認で<b>安心感を作る</b></span></div>
+        <div class="step"><span class="step-n">04</span><span class="step-body">講師のデモを見てから自分でも試す時間を取る</span></div>
+        <div class="step"><span class="step-n">05</span><span class="step-body">「これは自分の仕事なら何に当たるか」と考える余白を作る</span></div>
+        <div class="step"><span class="step-n">06</span><span class="step-body">Q&amp;Aで個別不安を回収する</span></div>
+        <div class="step"><span class="step-n">07</span><span class="step-body">配布物により、講座後も続けられる感覚を作る</span></div>
+      </div>
+      <div class="callout">
+        <span class="tag">結論</span>
+        <p>3時間の中身は知識講義ではなく<strong>初回利用の伴走</strong>です。伴走型の商品として見ると、密度が薄いことは欠点ではなく、むしろ満足度の条件になります。</p>
+      </div>
+    </section>
+
+    <section class="section" id="satisfaction" data-toc="満足度が高くなり得た要因">
+      <div class="sec-head"><span class="sec-kicker">05 — Satisfaction drivers</span><h2 class="sec-title">満足度が高くなり得た要因</h2></div>
+      <div class="factors">
+        <div class="factor"><div class="factor-head"><span class="factor-n">1</span><h4>成果物が目に見える</h4></div><p>ファイル・レポート・メールという目に見える成果物に落ちる。「分かった」より「できた」が満足を生む。自分のPCにファイルが生成される体験は、段階が一段上がったように感じられます。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">2</span><h4>初心者の不安に先回りしている</h4></div><p>料金・許可・機密情報・フォルダ・保存場所を扱う。「自分が不安に思っていたことを講師が分かっている」と感じられることが満足を生みます。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">3</span><h4>仕事に近いが、失敗しても痛くない題材</h4></div><p>フォルダ整理・議事録・データ・メールは実務に近いが、本番データほど危険ではない。「仕事に使えそう」だが「本番ほど怖くない」距離感が効きます。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">4</span><h4>「自分は遅れていない」安心を売る</h4></div><p>AI界隈の発信は初心者に焦りを与える。基礎編は「今ここから始めればよい」という足場を提供し、「自分も入り口には立てた」という安心を残します。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">5</span><h4>配布物が「講座後も使える感」を作る</h4></div><p>テンプレートやチェックリストは使いこなすためというより、受講後の不安を下げる役割。「帰ってから見ればよいものがある」安心が満足度を押し上げます。</p></div>
+        <div class="factor"><div class="factor-head"><span class="factor-n">6</span><h4>次の段階が見える</h4></div><p>再利用・連携・自動化が次段階として示される。本編理解には重いが、「今日できたことの先に大きな可能性がある」と感じさせ、次への導線になります。</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="structure" data-toc="全体構成と冒頭設計">
+      <div class="sec-head"><span class="sec-kicker">06 — Structure</span><h2 class="sec-title">全体構成と冒頭設計</h2></div>
+      <div class="steps">
+        <div class="step"><span class="step-n">01</span><span class="step-body"><b>冒頭</b> — なぜこの講座なのか、どんな未来に進むのか</span></div>
+        <div class="step"><span class="step-n">02</span><span class="step-body"><b>基礎理解</b> — 「聞くAI」と「作業するAI」の違い</span></div>
+        <div class="step"><span class="step-n">03</span><span class="step-body"><b>セットアップと安全運用</b> — 環境・フォルダ・許可・料金・機密情報</span></div>
+        <div class="step"><span class="step-n">04</span><span class="step-body"><b>ハンズオン1</b> — フォルダ整理、業務ファイル操作</span></div>
+        <div class="step"><span class="step-n">05</span><span class="step-body"><b>ハンズオン2</b> — 議事録・資料・データ・メールの成果物作成</span></div>
+        <div class="step"><span class="step-n">06</span><span class="step-body"><b>ハンズオン3</b> — 簡易アプリと「AIに作らせる」体験</span></div>
+        <div class="step"><span class="step-n">07</span><span class="step-body"><b>定着設計</b> — 業務ルール化・配布資料・受講後実践・応用編への導線</span></div>
+      </div>
+      <div class="callout">
+        <span class="tag">冒頭の本当の役割</span>
+        <p>冒頭は機能説明ではなく<strong>受講者の自己認識を変える</strong>こと。「私はAIに詳しくない」「コードは書けない」と思っている人に、技術の正確な説明より先に、今日のゴールが実務成果物にあることを示す。理解より体験を前に出す設計です。</p>
+        <p>ただし、冒頭で見せる未来像は絞るべき。先端機能を一気に見せると、期待より不安が勝ちます。「今日はPC上に成果物を作る。次回は繰り返し業務を仕組みにする」程度で十分です。</p>
+      </div>
+    </section>
+
+    <section class="section" id="parts" data-toc="各パートで扱っていた内容">
+      <div class="sec-head"><span class="sec-kicker">07 — Parts</span><h2 class="sec-title">各パートで扱っていた内容</h2></div>
+      <div class="parts">
+        <div class="part"><span class="part-n">1</span><div><h4>AI活用の現在地</h4><p>対話AIと、PC上の作業環境を扱うAIの違い。「AIに聞く」と「AIに作業させる」の差が中心です。</p><p>講義としては薄いが、受講者が「自分が今どこにいるか」を言語化できることが大きい。遅れているのではなく、次の段階をまだ体験していないだけだと整理されます。</p></div></div>
+        <div class="part"><span class="part-n">2</span><div><h4>基本操作</h4><p>対象フォルダ・ファイル読み書き・実行・許可確認。何を許可すると何が起きるかを理解させる意図です。</p><p>最大の壁は機能理解ではなく環境と権限への恐怖。「まだ実行しないで」「作業計画を確認する」「対象フォルダを限定する」は削りすぎない方がよい部分です。</p></div></div>
+        <div class="part"><span class="part-n">3</span><div><h4>安全な使い方</h4><p>機密情報を入れない、重要ファイルはバックアップ、許可を確認、料金を把握、対象フォルダを限定する。実務導入前の不安を扱います。</p></div></div>
+        <div class="part"><span class="part-n">4</span><div><h4>業務成果物の作成</h4><p>フォルダ整理・議事録から資料化・データ分析・メール下書き。狙いは「AIが実際のファイルを扱える」成功体験です。</p><p>価値は完成度ではなく、頭の中で「これなら自分のあの業務にも使える」が発生すること。複数種類を見せ、どこかに引っかかる確率を上げています。</p></div></div>
+        <div class="part"><span class="part-n">5</span><div><h4>簡易アプリ作成</h4><p>「コードを書けなくてもAIに作らせられる」体験。実務直結というより驚きの演出です。</p><p>ただし必須かは慎重に。業務効率化が目的なら脱線にもなり得ます。法人向けでは業務テンプレートや社内資料生成に置き換える方が自然な場合もあります。</p></div></div>
+        <div class="part"><span class="part-n">6</span><div><h4>業務ルール化</h4><p>業務ルール・出力形式・禁止事項・確認事項を一度書いてAIに渡す考え方。応用編の「仕組み化」へ自然につながります。</p><p>基礎編で最も重要な概念。単発利用から「自分用の業務ルールを持つAI」への橋。初心者には「毎回同じ説明をしなくてよいメモ」=業務マニュアルとして扱うべきです。</p></div></div>
+        <div class="part"><span class="part-n">7</span><div><h4>受講後アクション</h4><p>自分の業務で何に使うかを決める、配布テンプレートで実践する、応用編や個別相談へ進むことを促します。</p></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="work" data-toc="ワーク・演習の内容">
+      <div class="sec-head"><span class="sec-kicker">08 — Exercises</span><h2 class="sec-title">ワーク・演習の内容</h2></div>
+      <div class="work-list">
+        <div class="work-item"><b>フォルダ整理</b><span>PC内作業への恐怖を下げる</span></div>
+        <div class="work-item"><b>実行前確認</b><span>「まだ実行しないで」と作業計画を先に確認</span></div>
+        <div class="work-item"><b>議事録活用</b><span>会議が多い人に刺さる</span></div>
+        <div class="work-item"><b>データ分析</b><span>数字・レポート業務の人に刺さる</span></div>
+        <div class="work-item"><b>メール作成</b><span>ほぼ全ビジネス職に刺さる</span></div>
+        <div class="work-item"><b>簡易アプリ</b><span>AIの可能性を強く印象づける</span></div>
+        <div class="work-item"><b>業務ルール編集</b><span>受講後の継続利用へつなぐ</span></div>
+        <div class="work-item"><b>自分の業務への適用</b><span>月曜から何に使うかを決める</span></div>
+      </div>
+      <div class="callout">
+        <p>全演習を深くやる構成ではありません。<strong>広く見せて「自分ならこれに使う」を1つ持ち帰らせる</strong>構成。だから満足度は習熟度より、使い道の発見数に左右されます。</p>
+      </div>
+    </section>
+
+    <section class="section" id="handout" data-toc="配布物の役割">
+      <div class="sec-head"><span class="sec-kicker">09 — Handouts</span><h2 class="sec-title">配布物の役割</h2></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>配布物</th><th>役割</th></tr></thead>
+          <tbody>
+            <tr><td class="t-key">業務ルールのテンプレート</td><td>受講後に自分用のAI業務ルールを作るための型</td></tr>
+            <tr><td class="t-key">業務効率化プロンプト集</td><td>何を頼めばよいか分からない受講者の初速を上げる素材</td></tr>
+            <tr><td class="t-key">業務自動化チェックリスト</td><td>どの業務をAIに任せられるかを棚卸しする補助</td></tr>
+            <tr><td class="t-key">投影資料</td><td>流れ・画面操作・概念・演習手順の参照</td></tr>
+            <tr><td class="t-key">Q&amp;A集</td><td>つまずきやすい不安への補足資料</td></tr>
+            <tr><td class="t-key">アーカイブページ</td><td>配布資料・アンケート・次導線のポータル</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <p>配布物は講座中の教材というより<strong>受講後の不安を下げる保険</strong>として機能します。低価格のリード商材では、配布物の量と具体性が「払った以上に得た」感覚を作りやすい。</p>
+      </div>
+    </section>
+
+    <section class="section" id="anxiety" data-toc="参加者が不安に感じていたこと">
+      <div class="sec-head"><span class="sec-kicker">10 — Anxieties</span><h2 class="sec-title">参加者が不安に感じていたこと</h2></div>
+      <div class="anx-list">
+        <span class="anx">自分にも使いこなせるか</span>
+        <span class="anx">フォルダやファイルを壊さないか</span>
+        <span class="anx">許可ボタンを押すと何が起きるのか</span>
+        <span class="anx">機密情報を入れてよいのか</span>
+        <span class="anx">料金がどれくらいかかるのか</span>
+        <span class="anx">Windows / Macで操作が違うのか</span>
+        <span class="anx">作ったファイルがどこに保存されるのか</span>
+        <span class="anx">会社で使ってよいのか</span>
+        <span class="anx">自分の業務では何から始めればよいのか</span>
+      </div>
+      <div class="deep-anx">
+        <span class="tag">表面の奥にある不安</span>
+        <p>深い不安は<strong>「自分はAI時代に仕事ができる側に残れるのか」</strong>。ツールが怖いのではなく、それを当たり前に使う人たちから置いていかれることが怖い。だから不安対応は単なるFAQではなく、<strong>自己効力感を回復する役割</strong>を持ちます。初心者が知りたいのは仕様だけではなく、「この程度から始めてよい」「失敗しても戻れる」という<strong>許可</strong>です。</p>
+      </div>
+    </section>
+
+    <section class="section" id="cta" data-toc="クロージングとCTA">
+      <div class="sec-head"><span class="sec-kicker">11 — Closing &amp; CTA</span><h2 class="sec-title">クロージングとCTA</h2></div>
+      <div class="prose">
+        <p>クロージングは演習を「受講後すぐの実務」に接続します。理解して終わりではなく<strong>月曜から自分の業務で使う対象を決める</strong>ことを重視。同時に「もっと自動化できそう」「毎回頼むのは面倒」という<strong>未解決感を残し</strong>、応用編への導線にします。</p>
+      </div>
+      <div class="cta-list">
+        <div class="cta-item"><span class="cn">1</span><span><b>応用編への参加</b> — <span>繰り返し業務や外部連携、自動化へ進む</span></span></div>
+        <div class="cta-item"><span class="cn">2</span><span><b>AI講座・法人研修</b> — <span>社内展開・組織導入・DX支援へ</span></span></div>
+        <div class="cta-item"><span class="cn">3</span><span><b>個別相談</b> — <span>自社業務への適用・導入支援・研修相談</span></span></div>
+        <div class="cta-item"><span class="cn">4</span><span><b>アンケート</b> — <span>受講者の声・次回案内・資料配布との接続</span></span></div>
+        <div class="cta-item"><span class="cn">5</span><span><b>受講後実践</b> — <span>配布テンプレートで、まず1業務で試す</span></span></div>
+      </div>
+      <div class="callout">
+        <p>CTAは増やしすぎない。初心者向けの基礎編では<strong>次講座・法人相談・個別相談の3本</strong>に絞ると理解しやすくなります。</p>
+      </div>
+    </section>
+
+    <section class="section" id="translate" data-toc="自社版へ翻訳するなら">
+      <div class="sec-head"><span class="sec-kicker">12 — Translate to our product</span><h2 class="sec-title">自社版へ翻訳するなら</h2></div>
+      <div class="translate">
+        <div class="tcard keep">
+          <div class="tcard-head"><span class="tbadge">＋</span><h4>残すべきもの</h4></div>
+          <ul>
+            <li>コピー&amp;ペースト作業から脱する、という痛みの設定</li>
+            <li>PC上に成果物が残る体験を講座の中心に置く</li>
+            <li>整理・議事録・分析・メール・簡易アプリの低リスク演習</li>
+            <li>「自分用の業務ルール」を作る設計</li>
+            <li>許可・対象フォルダ・機密情報・料金の不安を冒頭から扱う</li>
+            <li>受講後に最初の1業務を決めさせるクロージング</li>
+          </ul>
+        </div>
+        <div class="tcard cut">
+          <div class="tcard-head"><span class="tbadge">−</span><h4>削る・変更すべきもの</h4></div>
+          <ul>
+            <li>特定時点の最新機能やモデル名に依存した説明</li>
+            <li>初心者に危険に見える権限突破や実行系デモ</li>
+            <li>CTAは次講座・法人相談・個別相談の3本程度に整理</li>
+            <li>セットアップに時間を使わぬよう事前準備や代替デモを用意</li>
+            <li>講師個人の実績依存は、自社事例・汎用パターンへ置換</li>
+          </ul>
+        </div>
+        <div class="tcard boost">
+          <div class="tcard-head"><span class="tbadge">↑</span><h4>強めるべき設計</h4></div>
+          <ul>
+            <li>最初の30分で「今日は自分にもできそう」と思わせる</li>
+            <li>60分以内に目に見える成果物を作る</li>
+            <li>90分以内に受講者自身の業務へ置き換えさせる</li>
+            <li>終盤で「もっと仕組み化したい」未解決感を作る</li>
+            <li>配布物で受講後の不安を下げる</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout">
+        <p>3時間で重要なのは情報量ではなく、受講者の心理状態を<strong>「怖い」から「試したい」へ動かす</strong>こと。情報で埋めようとしない方がよい。</p>
+      </div>
+    </section>
+
+    <div class="next-nav">
+      <a class="next-card is-prev" href="index.html">
+        <span class="nlab">← 戻る</span>
+        <span class="ntitle">概要</span>
+        <span class="nsub">2講座の全体像</span>
+      </a>
+      <a class="next-card is-next accent-advanced" href="02.html">
+        <span class="nlab">次の段階 →</span>
+        <span class="ntitle">Uravation応用編</span>
+        <span class="nsub">頼み方を仕組みにする</span>
+      </a>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>AI業務活用セミナー — Uravation基礎編</span>
+    <span class="mono">Uravation基礎編 · Uravation応用編</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var tocList = document.getElementById('tocList');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.section[data-toc]'));
+    var links = [];
+    sections.forEach(function (sec) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + sec.id;
+      a.textContent = sec.getAttribute('data-toc');
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var top = sec.getBoundingClientRect().top + window.pageYOffset - 78;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      });
+      li.appendChild(a);
+      tocList.appendChild(li);
+      links.push({ a: a, sec: sec });
+    });
+    var map = {};
+    links.forEach(function (l) { map[l.sec.id] = l.a; });
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          links.forEach(function (l) { l.a.classList.remove('active'); });
+          if (map[entry.target.id]) map[entry.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-78px 0px -70% 0px', threshold: 0 });
+    links.forEach(function (l) { observer.observe(l.sec); });
+  })();
+</script>
+
+</body>
+</html>
